@@ -121,3 +121,122 @@ video {
   height: 80px;
   background: var(--black);
 }
+
+@keyframes loader {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loader {
+  animation-name: loader;
+  animation-duration: 1s;
+  animation-timing-function: linear;
+  animation-iteration-count: infinite;
+}
+
+@keyframes button {
+  from {
+    transform: scale(1);
+  }
+  to {
+    transform: scale(1.1);
+  }
+}
+
+.button {
+  animation-name: button;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
+
+@keyframes background {
+  from {
+    background-position: 30% 60%;
+  }
+  to {
+    background-position: 60% 30%;
+  }
+}
+
+.background {
+  animation-name: background;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease;
+  animation-direction: alternate;
+}
+
+@keyframes submit-plane {
+  from {
+    transform: translate(0, 0);
+    opacity: 100%;
+  }
+  to {
+    transform: translate(50px, -50px);
+    opacity: 0%;
+  }
+}
+
+.submit-plane {
+  animation-name: submit-plane;
+  animation-duration: 1s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes pong-paddle-left {
+  from {
+    transform: translate(0, 0);
+  }
+  to {
+    transform: translate(0px, -100px);
+  }
+}
+
+.pong-paddle:nth-child(1) {
+  animation-name: pong-paddle-left;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate;
+}
+
+@keyframes pong-paddle-right {
+  from {
+    transform: translate(0px, 100px);
+  }
+  to {
+    transform: translate(0px, 0px);
+  }
+}
+
+.pong-paddle:nth-child(3) {
+  animation-name: pong-paddle-right;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-out;
+  animation-direction: alternate;
+}
+
+@keyframes pong-ball {
+  from {
+    transform: translate(220px, 110px);
+  }
+  to {
+    transform: translate(-220px, -110px);
+  }
+}
+
+.pong-ball {
+  animation-name: pong-ball;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-direction: alternate;
+}
