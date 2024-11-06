@@ -157,10 +157,10 @@ video {
 
 @keyframes background {
   from {
-    background-position: 30% 60%;
+    background-position: 20% 80%;
   }
   to {
-    background-position: 60% 30%;
+    background-position: 80% 20%;
   }
 }
 
@@ -201,7 +201,7 @@ video {
 
 .pong-paddle:nth-child(1) {
   animation-name: pong-paddle-left;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-in;
   animation-direction: alternate;
@@ -218,7 +218,7 @@ video {
 
 .pong-paddle:nth-child(3) {
   animation-name: pong-paddle-right;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: ease-out;
   animation-direction: alternate;
@@ -235,7 +235,7 @@ video {
 
 .pong-ball {
   animation-name: pong-ball;
-  animation-duration: 3s;
+  animation-duration: 4s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   animation-direction: alternate;
